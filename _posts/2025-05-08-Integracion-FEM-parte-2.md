@@ -15,7 +15,24 @@ $$ [K] \{U\} = \{F\} $$
 
 Donde $[K]$ es la matriz de rigidez del sistema, $\{U\}$ es el vector de desplazamientos y $\{F\}$ el vector de fuerzas. Utilizaremos elementos de tipo barra para las simulaciones FEM, por lo que cada uno de los nodos de nuestra malla tiene asociados 2 grados de libertad (ó DoF por sus siglas en inglés); uno en la dirección $x$ y otro en la dirección $y$. Pra nuestro caso particular, esto implica que si realizamos el análisis FEM para una geometría con 64x64 elementos, el número de nodos en cada una de las direcciones del material sería de 65 (uno más que el número de elementos en cada dirección) y el número de DoF globales sería de $65*2=130$. 
 
-Las condiciones de restricción adicionales a este sistema se usan para dar coherencia a la condición de periodicidad del problema. Lo que hacemos con estas condiciones es, por ejemplo, asociar los grados de libertad de la pared izquierda de nuestro material con los grados de libertad de la pared derecha, de modo que imponemos que el desplazamiento de este conjunto de nodos sea igual (o con una constante adicional, $\varphi$ de diferencia). Esta asociación de grados de libertad también se impone sobre los nodos inferiores y superiores, al igual que entre el nodo de la esquina inferior izquierda y el de la esquina superior derecha. 
+Las condiciones de restricción adicionales a este sistema se usan para dar coherencia a la condición de periodicidad del problema. Lo que hacemos con estas condiciones es, por ejemplo, asociar los grados de libertad de la pared izquierda de nuestro material con los grados de libertad de la pared derecha, de modo que imponemos que el desplazamiento de este último conjunto de nodos sea igual (o con una constante adicional, $\varphi$ de diferencia) al conjunto que se encuentra en el lado opuesto de nuestra geometría. Esta asociación de grados de libertad también se impone entre los nodos inferiores y superiores, al igual que entre el nodo de la esquina inferior izquierda y el de la esquina superior derecha. Los nodos internos no son restringidos por ninguna ecuación.
+
+Si generalizamos de forma matemática, podemos valernos de la constante de periodicidad de nuestra celda unitaria, $a$, para escribir estas nuevas ecuaciones como se presenta a continuación. Se utilizan los subíndices $L, R, B$ y $T$ para denotar a los lados a los que pertenecen los desplazamientos (*left, right, bottom* y *top*).
+
+- Asociación de desplazamientos izquierda-derecha: 
+
+$$ u_L(x,y) = u_R(x+a,y) + \varphi$$
+$$ v_L(x,y) = v_R(x+a,y) + \varphi$$
+
+- Asociación de desplazamientos izquierda-derecha: 
+
+$$ u_B(x,y) = u_T(x+a,y) + \varphi$$
+$$ v_B(x,y) = v_T(x+a,y) + \varphi$$
+
+- Asociación de desplazamientos esquina inferior izquierda-esquina superior derecha: 
+
+$$ u_BL(x,y) = u_TR(x+a,y+a) + \varphi$$
+$$ v_BL(x,y) = v_TR(x+a,y+a) + \varphi$$
 
 Esto anterior es ejemplificado más claramente con la siguiente imagen:
 
@@ -25,7 +42,11 @@ En últimas, estas ecuaciones adicionales causan la reducción del sistema matri
 
 $$ [T] [K] [T^T] \{U_R \} = [T] \{F\} $$
 
-Donde $[T]$ será la matriz 
+Donde $[T]$ se puede escribir como la siguiente matriz:
+
+
+
+
 
 ## Compromisos Futuros
 - Escribir la rutina en Python que permite calcular la matriz $[T]$ de nuestro problema, con base en unas condiciones de frontera periódicas establecidas.
