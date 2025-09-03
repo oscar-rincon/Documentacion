@@ -1,6 +1,6 @@
 ---
-title: Acta reunión 4 de agosto – Fundamentos en PyTorch y definición de arquitecturas
-tags: Acta, Semillero Mecánica Aplicada
+title: Fundamentos en PyTorch y definición de arquitecturas
+tags: Acta
 ---
 
 ## Discusión
