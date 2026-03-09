@@ -1,4 +1,7 @@
-# Sesión 01 – Proyecto 2026  
+---
+title: Sesión 01 – Proyecto 2026
+tags: Acta Proyecto2026
+--- 
 
 **Semillero:** Mecánica Aplicada – Materiales Porosos  
 **Fecha:** 20/02/2026  
@@ -6,13 +9,11 @@
 **Modalidad:** Presencial  
 **Duración:** 90 minutos  
 
----
 
 ## 1. Objetivo de la sesión
 
 Establecer las bases conceptuales y organizativas del proyecto 2026 sobre materiales porosos, con el propósito de iniciar la estructuración del documento de financiación y definir las líneas de trabajo, objetivos específicos y responsabilidades del equipo.
 
----
 
 ## 2. Contexto general del proyecto
 
@@ -21,8 +22,6 @@ El proyecto se orienta al estudio del comportamiento mecánico de materiales por
 Adicionalmente, se plantea desarrollar modelos de representación y visualización del material en función de parámetros previamente definidos, integrando herramientas analíticas, computacionales y eventualmente técnicas de simulación numérica.
 
 El enfoque contempla tanto el desarrollo teórico como posibles aplicaciones experimentales o modelaciones computacionales.
-
----
 
 ## 3. Conceptos discutidos
 
