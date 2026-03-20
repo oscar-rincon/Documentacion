@@ -20,14 +20,14 @@ Estamos buscando abordar un problema de la mecánica de materiales porosos. Part
 ## 3. Conceptos discutidos
 
 - Una propiedad se puede obtener con muchas microestructuras
-- Exigencia computacional
+- Exigencia computacional en la fase de entrenamiento de la red neuronal
 - Abrirnos a otros métodos mas simplificados. Transformada de Fourier
 - El problema de la homogenización inversa se puede abordar como un problema de optimización topológica
-- Método de Newton Raphson
+- Considerar el método de Newton Raphson
 - Pasar de 2D a 3D en un futuro
-- Usar Transformers. Redes neuronales
+- Usar Transformers como en el proyectos anteriores que fueron usados para optimización topológica.
  
-## 6. Pendientes para la próxima sesión
+## 6. Compromisos para la próxima sesión
 
 Para la siguiente sesión cada participante debe prepararse para socializar los resultados de la revisión del tercer paper. En el caso del club de lectura debemos avanzar desde el capítulo 4 al 6.
 
