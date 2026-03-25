@@ -5,9 +5,9 @@ tags: Acta Proyecto2026
 
 **Semillero:** Mecánica Aplicada – Materiales Porosos  
 **Fecha:**  19/03/2026  
-**Lugar:** 14-404 
-**Modalidad:** Presencial
-**Duración:** 60 minutos
+**Lugar:** 14-404  
+**Modalidad:** Presencial  
+**Duración:** 60 minutos  
 
 ## 1. Objetivo de la sesión
 
@@ -27,7 +27,7 @@ Estamos buscando abordar un problema de la mecánica de materiales porosos. Part
 - Pasar de 2D a 3D en un futuro
 - Usar Transformers como en el proyectos anteriores que fueron usados para optimización topológica.
  
-## 6. Compromisos para la próxima sesión
+## 4. Compromisos para la próxima sesión
 
 Para la siguiente sesión cada participante debe prepararse para socializar los resultados de la revisión del tercer paper. En el caso del club de lectura debemos avanzar desde el capítulo 4 al 6.
 
